@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      #navbar
+      {
+        display: flex;
+       justify-content: space-around; 
+       font-size: 25px;
+       border: 1px solid teal;
+      }
+      #search
+      {
+        width: 70%;
+        /* border: 1px solid black; */
+      }
+      #search_input
+      {
+        width: 90%;
+        border-radius: 50px;
+        padding: 10px;
+      }
+      #box
+      {
+        display: flex;
+        /* border: 1px solid red; */
+        height: auto;
+        margin-top: 30px;
+      }
+      #sidebar
+      {
+        line-height: 50px;
+     /* border: 1px solid red; */
+     width: 20%;
+     text-align: center;
+    
+       
+      }
+      #sidebar>div{
+        border: 1px solid black;
+       line-height: 20px;
+       background-color: teal;
+     color: white;
+     cursor: pointer;
+      }
+     #results>div{
+      border: 1px solid black;
+      width: 60%;
+      margin: auto;
+     line-height: 20px;
+     }
+     img{
+       width: 200px;
+       height: 200px;
+     }
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+
+    <div id="navbar">
+    
+    </div>
+
+
+    <div id="box">
+
+      <div id="sidebar">
+       <div>Countries</div>
+       <br>
+       <div id="in">India</div>
+       <br>
+       <div id="us">US</div>
+       <br>
+       <div id="ch">China</div>
+       <br>
+       <div id="uk">UK</div>
+       <br>
+       <div id="nz">New Zealand</div>
+      </div>
+
+      <div id="results"></div>
+
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js" type="module"></script>
